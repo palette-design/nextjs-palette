@@ -1,12 +1,12 @@
 import "@fontsource-variable/inter"
-
+import "@fontsource-variable/outfit"
 const defaultTheme = {
     key: 'default',  // DO NOT CHANGE
     prefixCls: 'ant', // DO NOT CHANGE
     iconPrefixCls: 'anticon',
     token: {
       fontFamily: 'Inter Variable', // Leave this blank to use Inter
-      headingFontFamily: "Inter Variable",
+      headingFontFamily: "Outfit Variable",
       colors: {
         // primary: '#592a4a',
         // primaryText: '#080808'

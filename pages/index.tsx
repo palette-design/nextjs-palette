@@ -56,9 +56,10 @@ export default function Home() {
   return (
     <VerticalLayout>
       <VerticalLayout.Header
+        mastheadProps={{ type: "hidden" }}
         logo={<Image src={logo} alt={"Palette"} />}
         pageTitle={currentMenuItem?.label}
-        pageDescription={"View and create new products in your store"}
+        pageDescription={"View and craeate new products in your store"}
         menuProps={{
           items: menuItems,
           selectedKeys: [current],
