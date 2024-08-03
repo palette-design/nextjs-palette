@@ -21,7 +21,7 @@ import { useTabsStates } from "@/mock/vLayoutTabs.mock";
 import { VerticalLayout, Table, Input, Button } from "palette-design";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBell, faSearch } from "@fortawesome/free-solid-svg-icons";
-
+import { ThemeSwitch } from "@/components/features/ThemeSwitch/ThemeSwitch";
 /**
  * Components
  */
@@ -88,7 +88,7 @@ export default function Home() {
           }}
         >
           {/* Theme Switch */}
-          {/* <ThemeSwitch /> */}
+          <ThemeSwitch />
 
           {/* Search Input */}
           <Input

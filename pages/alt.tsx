@@ -29,67 +29,7 @@ import {
   Tabs,
   Typography,
 } from "palette-design";
-
-// const Breadcrumb = dynamic(
-//   () => import("palette-design").then((mod) => mod.Breadcrumb),
-//   { ssr: false }
-// );
-// const Button = dynamic(
-//   () => import("palette-design").then((mod) => mod.Button),
-//   { ssr: false }
-// );
-// const Input = dynamic(() => import("palette-design").then((mod) => mod.Input), {
-//   ssr: false,
-// });
-
-// const HorizontalLayout = dynamic(
-//   () => import("palette-design").then((mod) => mod.HorizontalLayout),
-//   { ssr: false }
-// );
-// const AppBar = dynamic(
-//   () => import("palette-design").then((mod) => mod.HorizontalLayout.AppBar),
-//   { ssr: false }
-// );
-// const TrailingActions = dynamic(
-//   () =>
-//     import("palette-design").then(
-//       (mod) => mod.HorizontalLayout.AppBar.TrailingActions
-//     ),
-//   { ssr: false }
-// );
-// const SidePanel = dynamic(
-//   () => import("palette-design").then((mod) => mod.HorizontalLayout.SidePanel),
-//   { ssr: false }
-// );
-// const SidePanelList = dynamic(
-//   () =>
-//     import("palette-design").then((mod) => mod.HorizontalLayout.SidePanel.List),
-//   { ssr: false }
-// );
-// const Content = dynamic(
-//   () => import("palette-design").then((mod) => mod.HorizontalLayout.Content),
-//   { ssr: false }
-// );
-
-// const Table = dynamic(() => import("palette-design").then((mod) => mod.Table), {
-//   ssr: false,
-// });
-// const Tabs = dynamic(() => import("palette-design").then((mod) => mod.Tabs), {
-//   ssr: false,
-// });
-
-// const Title = dynamic(
-//   () => import("palette-design").then((mod) => mod.Typography.Title),
-//   { ssr: false }
-// );
-// const Text = dynamic(
-//   () => import("palette-design").then((mod) => mod.Typography.Text),
-//   { ssr: false }
-// );
-// const Emphasis = dynamic(
-//   () => import("palette-design").then((mod) => mod.Typography.Emphasis),
-//   { ssr: false }
-// );
+import { ThemeSwitch } from "@/components/features/ThemeSwitch/ThemeSwitch";
 
 const SampleTable = () => {
   const { title, columns, dataSource, onChange } = useTableStates();
@@ -136,7 +76,7 @@ export default function Alt() {
           }}
         >
           {/* Theme Switch */}
-          {/* <ThemeSwitch /> */}
+          <ThemeSwitch />
 
           {/* Search Input */}
           <Input placeholder="Search" prefix={<SearchOutlined />} allowClear />

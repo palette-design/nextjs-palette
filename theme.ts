@@ -1,5 +1,3 @@
-import "@fontsource-variable/inter"
-import "@fontsource-variable/outfit"
 const defaultTheme = {
     key: 'default',  // DO NOT CHANGE
     prefixCls: 'ant', // DO NOT CHANGE
@@ -23,18 +21,18 @@ const defaultTheme = {
         gradient4: '#B4F033', // Strictly HEX color codes
         accent: '#b0e9d6', // Strictly HEX color codes
         cove: '#d5dede', // Strictly HEX color codes
-        body: 'body.png'
+        body: 'assets/body.png'
       },
       header: {
-        imgUrl: 'header1.jpg'
+        imgUrl: 'assets/header1.jpg'
       },
       sidepanel: {
-        imgUrl: 'sider1.jpg'
+        imgUrl: 'assets/sider1.jpg'
       },
       card: {
         bgcolor: '#F9F9F9', // Strictly HEX color codes
-        contentbg: 'linear-gradient(-90deg, #EbF1F1CC 70%, #8EAFAC33), url(cardheader.png)',
-        headerbg: `linear-gradient(70deg, #EbF1F1CC 80%, #8EAFAC69 80%), url(cardheader.png)`
+        contentbg: 'linear-gradient(-90deg, #EbF1F1CC 70%, #8EAFAC33), url(assets/cardheader.png)',
+        headerbg: `linear-gradient(70deg, #EbF1F1CC 80%, #8EAFAC69 80%), url(assets/cardheader.png)`
       }
     }
   };
