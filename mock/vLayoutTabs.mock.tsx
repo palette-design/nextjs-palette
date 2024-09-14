@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
-import dynamic from "next/dynamic";
 import { TabsProps, Row, Col, Space, Flex, Form as AntdForm } from "antd";
-import { FilterFilled, CheckOutlined, CloseOutlined } from "@ant-design/icons";
 
 /**
  * Hooks
@@ -21,6 +19,8 @@ import {
  */
 
 import { Form, Typography, RangePicker, Input } from "palette-design";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheck, faFilter, faX } from "@fortawesome/free-solid-svg-icons";
 
 const FilterControl = ({
   title,
@@ -57,7 +57,7 @@ export const useTabsStates = (table: React.ReactNode, tabKey?: string) => {
             <Card
               title={
                 <Space>
-                  <FilterFilled />
+                  <FontAwesomeIcon icon={faFilter} />
                   <div>Filter</div>
                 </Space>
               }
@@ -85,8 +85,8 @@ export const useTabsStates = (table: React.ReactNode, tabKey?: string) => {
                   <Space size={"middle"}>
                     <div>Vel illum qui dolorem</div>
                     <Switch
-                      checkedChildren={<CheckOutlined />}
-                      unCheckedChildren={<CloseOutlined />}
+                      checkedChildren={<FontAwesomeIcon icon={faCheck} />}
+                      unCheckedChildren={<FontAwesomeIcon icon={faX} />}
                       defaultChecked
                     />
                   </Space>

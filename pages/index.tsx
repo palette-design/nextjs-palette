@@ -18,10 +18,17 @@ import { useTabsStates } from "@/mock/vLayoutTabs.mock";
  */
 // import { ThemeSwitch } from "@/components/features/ThemeSwitch/ThemeSwitch";
 
-import { VerticalLayout, Table, Input, Button } from "palette-design";
+import {
+  VerticalLayout,
+  Table,
+  Input,
+  Button,
+  ConfigProvider,
+} from "palette-design";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBell, faSearch } from "@fortawesome/free-solid-svg-icons";
 import { ThemeSwitch } from "@/components/features/ThemeSwitch/ThemeSwitch";
+import theme3 from "@/theme3";
 /**
  * Components
  */

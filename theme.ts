@@ -6,8 +6,6 @@ const defaultTheme = {
       fontFamily: 'Inter Variable', // Leave this blank to use Inter
       headingFontFamily: "Outfit Variable",
       colors: {
-        // primary: '#592a4a',
-        // primaryText: '#080808'
         primary: '#427e7b',
         primaryText: '#080808',
         caption: '#757C7C'

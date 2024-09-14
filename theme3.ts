@@ -19,18 +19,18 @@ const theme3 = {
         gradient4: '#262144', // Strictly HEX color codes
         accent: '#ffcbbc', // Strictly HEX color codes
         cove: '#d0c6d3', // Strictly HEX color codes
-        body: 'assets/body3.png'
+        body: 'body3.png'
       },
       header: {
-        imgUrl: 'assets/header3.jpg'
+        imgUrl: 'header3.jpg'
       },
       sidepanel: {
-        imgUrl: 'assets/sider3.jpg'
+        imgUrl: 'sider3.jpg'
       },
       card: {
         bgcolor: '#F9F9F9', // Strictly HEX color codes
-        contentbg: 'linear-gradient(-90deg, #f2f1f3cc 70%, #3b23601c), url(assets/cardheader3.png)',
-        headerbg: `linear-gradient(70deg, #f5f1fdc2 80%, #3b236047 80%), url(assets/cardheader3.png)`
+        contentbg: 'linear-gradient(-90deg, #f2f1f3cc 70%, #3b23601c), url(cardheader3.png)',
+        headerbg: `linear-gradient(70deg, #f5f1fdc2 80%, #3b236047 80%), url(cardheader3.png)`
       }
     }
   };

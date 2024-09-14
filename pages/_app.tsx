@@ -9,7 +9,8 @@ const unstyled = ["/unstyled", "/antd"];
 import { ThemeProvider } from "styled-components";
 import GlobalStyle from "../styles/GlobalStyle";
 import defaultTheme from "@/theme";
-import theme2 from "@/theme2";
+import theme2 from "../theme2";
+import theme3 from "../theme3";
 
 import "@fontsource-variable/inter";
 import "@fontsource-variable/outfit";

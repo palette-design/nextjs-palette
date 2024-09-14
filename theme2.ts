@@ -22,10 +22,10 @@ const theme2 = {
         body: 'body2.png'
       },
       header: {
-        imgUrl: 'assets/header2.jpg'
+        imgUrl: 'header2.jpg'
       },
       sidepanel: {
-        imgUrl: 'assets/sider2.jpg'
+        imgUrl: 'sider2.jpg'
       },
       card: {
         bgcolor: '#F9F9F9', // Strictly HEX color codes

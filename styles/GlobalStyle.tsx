@@ -65,9 +65,7 @@ ${(props) => {
         font-weight: 600;
         color: ${theme.colors.primaryText} !important;
       }
-    }
-
-    
+    }    
   `;
 }}
 `;

@@ -1,12 +1,4 @@
-import dynamic from "next/dynamic";
 import { TableProps, Space, Divider } from "antd";
-import {
-  DeleteFilled,
-  DownloadOutlined,
-  PrinterFilled,
-  GiftFilled,
-  FilterFilled,
-} from "@ant-design/icons";
 
 /**
  * Hooks
@@ -17,6 +9,14 @@ import { usePaletteColors } from "palette-design";
  * Components
  */
 import { Typography, Button, Tag, Table } from "palette-design";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faDownload,
+  faFilter,
+  faGift,
+  faPrint,
+  faTrash,
+} from "@fortawesome/free-solid-svg-icons";
 
 const { ActionBar } = Table;
 
@@ -121,8 +121,8 @@ export const useTableStates = () => {
       align: "right",
       render: (_, record) => (
         <Space>
-          <Button icon={<DeleteFilled />} />
-          <Button icon={<DownloadOutlined />} />
+          <Button icon={<FontAwesomeIcon icon={faTrash} />} />
+          <Button icon={<FontAwesomeIcon icon={faDownload} />} />
         </Space>
       ),
     },
@@ -140,14 +140,14 @@ export const useTableStates = () => {
   const title = (
     <ActionBar>
       <Button type="primary">Add New Product</Button>
-      <Button icon={<PrinterFilled />}></Button>
-      <Button icon={<GiftFilled />}></Button>
+      <Button icon={<FontAwesomeIcon icon={faPrint} />}></Button>
+      <Button icon={<FontAwesomeIcon icon={faGift} />}></Button>
 
       <Divider style={{ marginInline: 20 }} type="vertical" />
 
       <Space size={"middle"}>
         <Space>
-          <FilterFilled />
+          <FontAwesomeIcon icon={faFilter} />
           <Typography.Overline>Quick Filter:</Typography.Overline>
         </Space>
         <div>

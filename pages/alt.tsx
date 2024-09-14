@@ -2,10 +2,8 @@
 
 import { useMemo, useState } from "react";
 import { useRouter } from "next/router";
-import dynamic from "next/dynamic";
 import Image from "next/image";
 import logo from "../public/logo.svg";
-import { BellFilled, SearchOutlined } from "@ant-design/icons";
 
 /**
  * Mock data
@@ -30,6 +28,8 @@ import {
   Typography,
 } from "palette-design";
 import { ThemeSwitch } from "@/components/features/ThemeSwitch/ThemeSwitch";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBell, faSearch } from "@fortawesome/free-solid-svg-icons";
 
 const SampleTable = () => {
   const { title, columns, dataSource, onChange } = useTableStates();
@@ -79,10 +79,14 @@ export default function Alt() {
           <ThemeSwitch />
 
           {/* Search Input */}
-          <Input placeholder="Search" prefix={<SearchOutlined />} allowClear />
+          <Input
+            placeholder="Search"
+            prefix={<FontAwesomeIcon icon={faSearch} />}
+            allowClear
+          />
 
           {/* Notification Button */}
-          <Button icon={<BellFilled />} />
+          <Button icon={<FontAwesomeIcon icon={faBell} />} />
         </HorizontalLayout.AppBar.TrailingActions>
       </HorizontalLayout.AppBar>
 
