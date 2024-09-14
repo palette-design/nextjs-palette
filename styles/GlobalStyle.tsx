@@ -44,9 +44,13 @@ ${(props) => {
       
       / * Menu hidden in overflow */
       & .${prefixCls}-menu-submenu-title {
-		background-color: ${primaryColors[5]}40 !important;
-		color: ${theme.colors.primaryText} !important;
+      background-color: ${primaryColors[5]}40 !important;
+      color: ${theme.colors.primaryText} !important;
 	  }
+
+    & .${prefixCls}-menu-item {
+      padding-inline: 15px;
+    }
 
       & .${prefixCls}-menu-item,
       & .${prefixCls}-menu-submenu {
